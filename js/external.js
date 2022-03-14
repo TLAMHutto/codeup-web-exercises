@@ -18,7 +18,7 @@ let totalPay = (facebook * facebookHours) + (google * googleHours) + (amazon * a
 alert("Your weekly paycheck is " + totalPay)*/
 /*let numOfClasses = prompt("How many hours of classes are you currently taking?")
 let currentSch = prompt("What days are you currently taking classes?")
-let newClass = prompt("What day is new class wanting to add?")
+let newClass = prompt("What day is new class wanting to add?(Mon, Tues, Wed, Thru, Fri")
 function enroll () {
     if (numOfClasses <= 12 && currentSch !== newClass) {
         alert("You can enroll in this class")
