@@ -44,8 +44,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-let color = ""
-function analyzeColor (colors) {
+/*let color = ""*/
+/*function analyzeColor (colors) {
     if (color === "red" || colors === "red") {
         return ("Roses are red")
     } else if (color === "blue" || colors === "blue") {
@@ -56,20 +56,40 @@ function analyzeColor (colors) {
 }
 console.log(randomColor)
 console.log(analyzeColor(randomColor))
-alert(analyzeColor(randomColor))
+alert(analyzeColor(randomColor))*/
 
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-
+/*switch(randomColor) {
+    case "red":
+        alert("Roses are red")
+        break;
+    case "blue":
+        alert("The sky is blue")
+        break;
+    default:
+        alert("I dont know anything by that color")
+        break;
+}
+console.log(randomColor)*/
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+/*function analyzeColor (color) {
+    if (color === "red") {
+        return ("Roses are red")
+    } else if (color === "blue") {
+        return ("The sky is blue")
+    } else {
+        return ("I dont know anything by that color")
+    }
+}
+alert(analyzeColor(color))*/
 /* ########################################################################## */
 
 /**
@@ -101,8 +121,24 @@ alert(analyzeColor(randomColor))
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+let bill = prompt("What was the total of your bill?")
 
+function calculateTotal (luckyNumber) {
+    if (luckyNumber === 1) {
+        return ("Your lucky number is " + luckyNumber + " so you got a discount of 10%, your total is " + (bill - (bill * .1)))
+    } else if (luckyNumber === 2) {
+        return ("Your lucky number is " + luckyNumber + " so you got a discount of 25%, your total is " + (bill - (bill * .25)))
+    }  else if (luckyNumber === 3) {
+        return ("Your lucky number is " + luckyNumber + " so you got a discount of 25%, your total is " + (bill - (bill * .35)))
+    } else if (luckyNumber === 4) {
+        return ("Your lucky number is " + luckyNumber + " so you got a discount of 25%, your total is " + (bill - (bill * .50)))
+    } else {
+        return ("You lucky number was 5 so your total is " + (bill - (bill * 1)))
+    }
+}
+alert(calculateTotal(luckyNumber))
+console.log(luckyNumber)
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
