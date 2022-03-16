@@ -21,8 +21,8 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-let color = prompt("Enter color")
-function analyzeColor (color) {
+/*let color = prompt("Enter color")*/
+/*function analyzeColor (color) {
     if (color === "red") {
         return ("Roses are red")
     } else if (color === "blue") {
@@ -30,8 +30,8 @@ function analyzeColor (color) {
     } else {
         return ("I dont know anything by that color")
     }
-}
-alert(analyzeColor(color))
+}*/
+/*alert(analyzeColor(color))*/
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -44,6 +44,19 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+let color = ""
+function analyzeColor (colors) {
+    if (color === "red" || colors === "red") {
+        return ("Roses are red")
+    } else if (color === "blue" || colors === "blue") {
+        return ("The sky is blue")
+    } else {
+        return ("I dont know anything by that color")
+    }
+}
+console.log(randomColor)
+console.log(analyzeColor(randomColor))
+alert(analyzeColor(randomColor))
 
 /**
  * TODO:
