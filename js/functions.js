@@ -70,19 +70,25 @@ console.log(isTwo())
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-/*let costOfMeal = prompt("What was the cost of the meal?")
-let customTip = prompt("How what percentage do you want to tip?")
-function calculateTip () {
-    alert ("The total amount of tip is " + costOfMeal * (customTip / 100) + "$")
+/*let costOfMeal = 50
+let tip = .1
+function calculateTip (costOfMeal, tip) {
+    const totalTip = (costOfMeal * tip)
+    const mealWithTip = (costOfMeal + totalTip)
+    return mealWithTip
 }
-console.log(calculateTip())*/
+console.log(calculateTip(200, .2))*/
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-
+/*let customTip = prompt("How what percentage do you want to tip?")
+function calculateTip () {
+    alert ("The total amount of tip is " + costOfMeal * (customTip / 100) + "$")
+}
+console.log(calculateTip())*/
 
 /**
  * TODO:
@@ -98,10 +104,12 @@ console.log(calculateTip())*/
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-let orginalPrice = 100
-let discount = .30
-let totalPrice = (orginalPrice - (orginalPrice * discount))
-function applyDiscount () {
-    return ("The price with the discount added is " + totalPrice + "$")
+/*
+let originalPrice = 100
+let discount = .2
+function totalPrice (originalPrice, discount) {
+    const discountAmount = (originalPrice * discount)
+    const priceWithDiscount = (originalPrice - discountAmount)
+    return priceWithDiscount
 }
-console.log(applyDiscount())
+console.log(totalPrice(200, .2))*/
