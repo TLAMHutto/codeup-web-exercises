@@ -1,5 +1,5 @@
 "use strict";
-test
+
 /* ########################################################################## */
 
 /**
@@ -21,7 +21,17 @@ test
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-
+let color = prompt("Enter color")
+function analyzeColor (color) {
+    if (color === "red") {
+        return ("Roses are red")
+    } else if (color === "blue") {
+        return ("The sky is blue")
+    } else {
+        return ("I dont know anything by that color")
+    }
+}
+alert(analyzeColor(color))
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
