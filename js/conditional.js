@@ -158,29 +158,32 @@ console.log(luckyNumber)*/
  * HINT: The way we prompt for a value could be improved
  */
 let question = confirm("would you like to enter a number?")
-let userNum = Number()
+let userNum = Math.floor("")
 console.log(userNum)
 console.log(typeof userNum)
 if (question === true) {
-    userNum = (prompt("Enter a number"))
+    userNum = Math.floor((prompt("Enter a number")))
+    console.log(userNum)
+    console.log(typeof userNum)
 }
 if (question === false) {
     alert("bye")
 }
 function userNumber () {
+    let add = userNum + 100
     let even = (userNum % 2 === 0)
     let odd = (userNum % 2 !== 0)
     let positive = (userNum > 0)
     let negative = (userNum < 0)
     let notANum = undefined
     if (even == true && positive == true) {
-        return ("Number is even and positive with 100 added")
+        return ("Number is even and positive with 100 added " + add)
     } if (even == true && negative == true) {
-        return ("Number is even and negitive with 100 added")
+        return ("Number is even and negitive with 100 added " + add)
     } if (odd == true && positive == true) {
-        return ("Number is odd and positive with 100 added")
+        return ("Number is odd and positive with 100 added " + add)
     } if (odd == true && negative == true) {
-        return ("Number is odd abd negative with 100 added")
+        return ("Number is odd abd negative with 100 added " + add)
     } if (notANum = true) {
         return ("Enter a valid number")
     }
