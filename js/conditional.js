@@ -121,7 +121,7 @@ alert(analyzeColor(color))*/
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
+/*var luckyNumber = Math.floor(Math.random() * 6);
 let bill = prompt("What was the total of your bill?")
 
 function calculateTotal (luckyNumber) {
@@ -138,7 +138,7 @@ function calculateTotal (luckyNumber) {
     }
 }
 alert(calculateTotal(luckyNumber))
-console.log(luckyNumber)
+console.log(luckyNumber)*/
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -157,3 +157,30 @@ console.log(luckyNumber)
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+let question = confirm("would you like to enter a number?")
+let userNum = ""
+if (question === true) {
+    userNum = (prompt("Enter a number"))
+}
+if (question === false) {
+    alert("bye")
+}
+function number () {
+    let even = (userNum % 2 === 0)
+    let odd = (userNum % 2 !== 0)
+    let positive = (userNum > 0)
+    let negative = (userNum < 0)
+    if (even == true && positive == true) {
+        return ("Number is even and positive")
+    } if (even == true && negative == true) {
+        return ("Number is even and negitive")
+    } if (odd == true && positive == true) {
+        return ("Number is odd and positive")
+    } if (odd == true && negative == true) {
+        return ("Number is odd abd negative")
+    }
+
+    return
+}
+console.log(number())
+alert(number())
