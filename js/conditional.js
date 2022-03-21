@@ -121,24 +121,24 @@ alert(analyzeColor(color))*/
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-/*var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
 let bill = prompt("What was the total of your bill?")
 
-function calculateTotal (luckyNumber) {
+function calculateTotal (randomNumber) {
     if (luckyNumber === 1) {
         return ("Your lucky number is " + luckyNumber + " so you got a discount of 10%, your total is " + (bill - (bill * .1)))
     } else if (luckyNumber === 2) {
         return ("Your lucky number is " + luckyNumber + " so you got a discount of 25%, your total is " + (bill - (bill * .25)))
     }  else if (luckyNumber === 3) {
-        return ("Your lucky number is " + luckyNumber + " so you got a discount of 25%, your total is " + (bill - (bill * .35)))
+        return ("Your lucky number is " + luckyNumber + " so you got a discount of 35%, your total is " + (bill - (bill * .35)))
     } else if (luckyNumber === 4) {
-        return ("Your lucky number is " + luckyNumber + " so you got a discount of 25%, your total is " + (bill - (bill * .50)))
+        return ("Your lucky number is " + luckyNumber + " so you got a discount of 50%, your total is " + (bill - (bill * .50)))
     } else {
-        return ("You lucky number was 5 so your total is " + (bill - (bill * 1)))
+        return ("You lucky number was 5 so your total is " + (bill - bill))
     }
 }
 alert(calculateTotal(luckyNumber))
-console.log(luckyNumber)*/
+console.log(luckyNumber)
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -159,12 +159,8 @@ console.log(luckyNumber)*/
  */
 let question = confirm("would you like to enter a number?")
 let userNum = Math.floor("")
-console.log(userNum)
-console.log(typeof userNum)
 if (question === true) {
     userNum = Math.floor((prompt("Enter a number")))
-    console.log(userNum)
-    console.log(typeof userNum)
 }
 if (question === false) {
     alert("bye")
@@ -175,7 +171,7 @@ function userNumber () {
     let odd = (userNum % 2 !== 0)
     let positive = (userNum > 0)
     let negative = (userNum < 0)
-    let notANum = undefined
+    let notANum = NaN
     if (even == true && positive == true) {
         return ("Number is even and positive with 100 added " + add)
     } if (even == true && negative == true) {
@@ -187,8 +183,6 @@ function userNumber () {
     } if (notANum = true) {
         return ("Enter a valid number")
     }
-
     return
 }
-console.log(typeof userNumber())
 alert(userNumber())
