@@ -14,11 +14,23 @@ var result = prompt("Enter a odd number between 1- 50");
         document.write("<br>" + i)
     }
 */
-var i = 1
+/*var i = 1
 while (i<65536) {
     i *=2
     console.log(i)
     if (i === 65536) {
         break;
     }
-}
+}*/
+let randomConesDay = Math.floor(Math.random()*50)+50
+do {
+    var randomPerPerson = Math.floor(Math.random() * 5) + 1;
+    console.log(randomPerPerson)
+    result = randomConesDay - randomPerPerson;
+     if (randomConesDay > randomPerPerson){
+        break;
+    }
+
+}while (randomConesDay > randomPerPerson) ;
+console.log(randomConesDay)
+console.log(result);
