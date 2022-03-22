@@ -22,7 +22,7 @@ while (i<65536) {
         break;
     }
 }*/
-let randomConesDay = Math.floor(Math.random()*50)+50
+/*
 do {
     var randomPerPerson = Math.floor(Math.random() * 5) + 1;
     console.log(randomPerPerson)
@@ -33,4 +33,13 @@ do {
 
 }while (randomConesDay > randomPerPerson) ;
 console.log(randomConesDay)
-console.log(result);
+console.log(result);*/
+//Icecream Loop
+let amtToSell = Math.floor(Math.random()*50)+50
+
+do {
+    let amtBought = Math.floor(Math.random() * 5) + 1;
+    amtToSell = amtToSell- amtBought
+    console.log(amtBought)
+    console.log(amtToSell)
+} while (amtToSell >= 0)
