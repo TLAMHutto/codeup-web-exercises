@@ -27,8 +27,18 @@ while (i<65536) {
 let amtToSell = Math.floor(Math.random()*50)+50
 
 do {
-    let amtBought = Math.floor(Math.random() * 5) + 1;
-    amtToSell = amtToSell- amtBought
-    console.log(amtBought)
+    var amtBought = Math.floor(Math.random() * 5) + 1;
     console.log(amtToSell)
-} while (amtToSell >= 0)
+    if (amtToSell > 0) {
+        console.log(amtBought + " cones sold")
+    }
+    if (amtToSell < amtBought) {
+        console.log("Cant sell " + amtBought + " I only have "  + amtToSell + " left")
+        console.log("You can buy " + amtToSell + " instead")
+        if (amtToSell - amtToSell == 0) {
+            console.log("Thanks! I am all out of icecream")
+        }
+    }
+    amtToSell=amtToSell-amtBought
+} while (amtBought <= amtToSell)
+
