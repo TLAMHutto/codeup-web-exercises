@@ -53,3 +53,15 @@ function oddArray (myArray, invert = false) {
 }
 oddArray(myArray)
 console.log(myArray)*/
+//Exercise 5
+let creditStr = '1234432156788765',
+    visable = creditStr.slice(-4)
+    starNum = '';
+function creditCard () {
+    for(var i=(creditStr.length)-4;i>0;i--){
+        starNum += '*';
+    }
+    console.log(starNum + visable)
+    return
+}
+creditCard()
