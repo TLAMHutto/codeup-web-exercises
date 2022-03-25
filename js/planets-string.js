@@ -10,7 +10,7 @@
      * console.log planetsArray to check your work
      */
     let planetsArray = planetsString.split(',')
-     console.log(planetsArray);
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -23,6 +23,6 @@
      * string, and <li> tags around each planet.
      */
     let planetsStringBr = "Mercury" + "\n" + "Venus" + "\n" + "Earth" + "\n" + "Mars" + "\n" + "Jupiter" + "\n" + "Saturn"
-    + "\n" + "Uranus" + "\n" + "Neptune"
+        + "\n" + "Uranus" + "\n" + "Neptune"
     console.log(planetsStringBr)
 })();
