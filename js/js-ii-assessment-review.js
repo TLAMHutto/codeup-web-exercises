@@ -54,6 +54,7 @@ function oddArray (myArray, invert = false) {
 oddArray(myArray)
 console.log(myArray)*/
 //Exercise 5
+/*
 let creditStr = '1234432156788765',
     visable = creditStr.slice(-4)
     starNum = '';
@@ -64,4 +65,12 @@ function creditCard () {
     console.log(starNum + visable)
     return
 }
-creditCard()
+creditCard()*/
+//Exercise 6
+/*
+function alphabetSoup (soup) {
+    var arr = soup.split('')
+    var sorted = arr.sort()
+    return sorted.join('')
+}
+console.log(alphabetSoup('jnlnvfvedfvwkm'))*/
