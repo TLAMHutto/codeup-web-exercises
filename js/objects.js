@@ -132,12 +132,12 @@ person.sayHello = function () {
     ]
 //create foreach loop that iterates through the books array
 //console.log the title and author of each book
-    /* books.forEach(function (book) {
+    books.forEach(function (book) {
         console.log(book.title + " by " + book.author.firstName + " " + book.author.lastName);
     }
-    )
-        /**
-         * Bonus:
+    );
+
+         /** Bonus:
          * - Create a function named `createBook` that accepts a title and author
          *   name and returns a book object with the properties described
          *   previously. Refactor your code that creates the books array to instead
@@ -145,7 +145,7 @@ person.sayHello = function () {
          * - Create a function named `showBookInfo` that accepts a book object and
          *   outputs the information described above. Refactor your loop to use your
          *   `showBookInfo` function.
-         */
+         *!/*/
     function createBook(title, authorLastName, authorFirstName) {
         return {
             title: title,
