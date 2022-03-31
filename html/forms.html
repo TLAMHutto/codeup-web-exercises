@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veridian Forms</title>
+</head>
+<body>
+<form method="POST" action="https://request-inspector.glitch.me/">
+    <!--      enter email and password-->
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter email">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Enter password">
+    <br>
+    <textarea name="bio">Tell us about yourself</textarea>
+    <br>
+    <label for="heard">How did you hear about us?</label>
+    <br>
+    <input type="radio" name="heard" id="heard" value="billoard">
+    <label for="heard">Billboard</label>
+    <input type="radio" name="heard" id="radio" value="radio avertisement">
+    <label for="heard">Radio advertisement</label>
+    <input type="radio" name="heard" id="internet" value="internet advertisment">
+    <label for="heard">Internet advertisement</label>
+    <input type="radio" name="heard" id="other" value="Other">
+    <label for="heard">Other</label>
+    <br>
+    <label for="browser">What web browser are you using?</label>
+    <select name="browser" id="browser">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="safari">Safari</option>
+        <option value="opera">Opera</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
