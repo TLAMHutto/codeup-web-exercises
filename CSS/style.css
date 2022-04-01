@@ -1,3 +1,38 @@
+*{
+    font-family: "Bangla MN";
+}
+body {
+    background-color: coral;
+    background-image: url("../images/backgrond.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1 {
-    color: purple;
+    color: white;
+    text-align: center;
+}
+h2 {
+    color: red;
+    text-decoration: underline;
+}
+ul {
+    list-style: square;
+}
+.product{
+    text-align: center;
+}
+.pricing{
+    margin: 0 auto;
+    color: darkorange;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background: azure;
+    font-size: 15px;
+}
+.plan {
+    text-decoration: underline;
+}
+#link:hover{
+    color: darkorange;
 }
