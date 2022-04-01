@@ -33,6 +33,10 @@ ul {
 .plan {
     text-decoration: underline;
 }
+#link:visited{
+    color: aqua;
+}
 #link:hover{
     color: darkorange;
 }
+
