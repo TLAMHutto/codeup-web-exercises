@@ -1,0 +1,58 @@
+:root{
+    --bg: 5%;
+    --header: rgb(54, 54, 250);
+    --font-color:white;
+    --nav-font-color:black;
+    --img-font: rgba(255, 255, 255, 0.5);
+}
+
+.jumbotron{
+    background-image: url("../images/pizza.png");
+;
+}
+.display-4{
+    background-color: var(--img-font);
+    width: calc(100% - .25em);
+    position: relative;
+    left: 1em;
+    box-shadow: -10px -10px 5px 3px rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.main-header{
+    background-color: var(--header);
+    color: var(--font-color)
+}
+.handTossedCard{
+    margin: 1em 1em;
+}
+.custom-radio{
+    margin: 1em 1em;
+}
+.subheader{
+    background: none;
+}
+.next-step-btn{
+    width: calc(100% - 35em);
+    text-align: center;
+    border-radius: var(--bg);
+
+}
+.next-step-header{
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+.form-group{
+    margin: 1em 1em;
+}
+.custom-checkBox{
+    margin: 1em 1em;
+}
+.btn{
+    font-size: .8em;
+    color: var(--nav-font-color);
+    background: none;
+    border: none;
+}
