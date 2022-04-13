@@ -1,0 +1,54 @@
+.card-heading{
+    display: flex;
+    justify-content: center;
+}
+.about{
+    text-align: center;
+    letter-spacing: 2px;
+}
+p{
+    display: flex;
+    text-align: center;
+}
+.card{
+    border: none;
+    border-bottom: 3px solid green;
+
+}
+.row{
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    height: auto;
+    margin-bottom: 10px;
+
+}
+.contact{
+    justify-content: center;
+    width: 10em;
+    margin: auto;
+}
+.blue-heading{
+    color:rgb(114, 114, 253);
+    text-align: left;
+}
+
+.aboutMe{
+    text-align: left;
+}
+h6{
+    text-align: left;
+}
+li{
+    text-align: left;
+}
+@media only screen and (max-width: 400px) {
+    .align-items-start{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-5, .col-7{
+        width: calc(100% + 2em);
+    }
+
+}
