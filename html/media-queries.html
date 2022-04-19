@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="media-query-project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+
+</head>
+<body>
+<div class="container">
+    <div class="alert-info hidden-on-desktop">
+        <a class="skip" href="#main">Skip to main content</a>
+    </div>
+    <div class="top-heading">
+        <h1>Codeup Coffee Club</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="header-img">
+        <!--    <img src="https://post.healthline.com/wp-content/uploads/2020/08/safe-to-eat-coffee-beans-1200x628-facebook-1200x628.jpg" alt="" id="img">-->
+        <div><iframe id="gif" allow="fullscreen" frameBorder="0" src="https://giphy.com/embed/h0zcvmuXQXF01dKWKD/video"></iframe></div>
+    </div>
+    <hr>
+    <div class="new-main" id="newMain">
+        <section id="main" class="main">
+            <h2>About us</h2>
+            <p class="">Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
+        </section>
+        <section class="sub-section">
+            <h2>Core Values</h2>
+            <p class="">Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
+        </section>
+    </div>
+    <div class="container">
+        <form>
+            <p class="join slidein">Join the Club</p>
+            <!--            <hr class="slidein">-->
+            <label class="labelBox" for="fname">First Name</label>
+            <input class="inputBox" type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label class="labelBox"  for="lname">Last Name</label>
+            <input class="inputBox" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label class="labelBox"  for="subject">Subject</label>
+            <textarea class="inputBox" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input id="submit" class="submitBtn" type="submit" value="Submit">
+
+        </form>
+    </div>
+    <footer>
+        <div class="bottom">
+            <p>(c) 2017 All rights reserved</p>
+            <!--    </div>-->
+
+            <div class="links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
