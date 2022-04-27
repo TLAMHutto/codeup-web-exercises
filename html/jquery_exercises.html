@@ -5,11 +5,58 @@
     <title></title>
 </head>
 <body>
+    <!-- <div class="container" id="wrapper">
+        <h1 class="codeup" id="title">My Jquery HTML Exercise</h1>
+        <p class="codeup" id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dicta optio, culpa saepe dolores libero labore reiciendis suscipit soluta odit, consequatur nobis doloremque in, atque quibusdam ex. Voluptas, at rerum.</p>
+        <ul class="list" id="uList">
+            <li class="list-item" id="first-item">
+                lorem
+            </li>
+            <li class="list-item" id="second-item">
+                lorem
+            </li>
+            <li class="list-item" id="third-item">
+                lorem
+            </li>
+        </ul>
+
+    </div> -->
+
+
+
+
+
+
 <script src="../js/jquery-2.2.4.js"></script>
 <script>
-    $(document).ready(function() {
-        alert( 'The DOM has finished loading!' );
+    // $(document).ready(function() {
+    //     alert( 'The DOM has finished loading!' );
+    // });
+    //create div.class#wrapper    
+    $('body').append('<div class="container" id="wrapper"></div>');
+    //create h1.codeup#title
+    $('#wrapper').append('<h1 class="codeup" id="title">My Jquery HTML Exercise(Click ME!)</h1>');
+    //create p.codeup#para
+    $('#wrapper').append('<p class="codeup" id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dicta optio, culpa saepe dolores libero labore reiciendis suscipit soluta odit, consequatur nobis doloremque in, atque quibusdam ex. Voluptas, at rerum.</p>');
+    $('#wrapper').append('<h2 class=codeup id="title2">List Title</h2>');
+    //create ul.list#uList
+    $('#wrapper').append('<ul class="list" id="uList"></ul>');
+    //create li.list-item#first-item
+    $('#uList').append('<li class="list-item" id="first-item">lorem</li>');
+    //create li.list-item#second-item
+    $('#uList').append('<li class="list-item" id="second-item">lorem</li>');
+    //create li.list-item#third-item
+    $('#uList').append('<li class="list-item" id="third-item">lorem</li>');
+    //alert content of h1#title
+    $('#title').click(function() {
+        alert($(this).text());
     });
+    //set border around .codeup
+    $('.codeup').css('border', '1px solid red');
+    //set font size of li to 20px
+    $('.list-item').css('font-size', '20px');
+    //set background color of h1,p,li to yellow
+    $('h1,p,li').css('background-color', 'yellow');
 </script>
 </body>
 </html>
