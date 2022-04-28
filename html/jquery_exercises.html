@@ -57,6 +57,23 @@
     $('.list-item').css('font-size', '20px');
     //set background color of h1,p,li to yellow
     $('h1,p,li').css('background-color', 'yellow');
+    //change background color of h1 to red when clicked
+    $('h1').click(function() {
+    $(this).css('background-color', 'red');
+    });
+    //change p font size to 18px when double clicked
+    $('p').dblclick(function() {
+        $(this).css('font-size', '18px');
+    });
+    //change li text color to red when hovered over and black when not hovered over
+    $('.list-item').hover(function() {
+        $(this).css('color', 'red');
+    }, function() {
+        $(this).css('color', 'black');
+    });
+
+    
+    
 </script>
 </body>
 </html>
