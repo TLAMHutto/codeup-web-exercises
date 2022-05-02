@@ -12,6 +12,32 @@
     }
 </style>
 <body>
+    <div class="parks">
+    <button id="btn-parks">Click Me</button>
+    <h3>The BadLands</h3>
+        <ul>
+            <li>The Badlands is located in South Dakota</li>
+            <li>The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies.</li>
+            <li>The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils.</li>
+            <li>The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs.</li>
+        </ul>
+    <h3>Big Bend</h3>
+        <ul>
+            <li>Big Bend is located on the border of Texas and Mexico</li>
+            <li>Named for the prominent bend in the Rio Grande along the U.S.–Mexico border, this park encompasses a large and remote part of the Chihuahuan Desert.</li>
+            <li>ts main attraction is backcountry recreation in the arid Chisos Mountains and in canyons along the river.
+            </li>
+            <li>A wide variety of Cretaceous and Tertiary fossils as well as cultural artifacts of Native Americans also exist within its borders.</li>
+        </ul>
+    <h3>CanyonLands</h3>
+        <ul>
+            <li>CanyonLands is located in Utah</li>
+            <li>This landscape was eroded into a maze of canyons, buttes, and mesas by the combined efforts of the Colorado River, Green River, and their tributaries, which divide the park into three districts.</li>
+            <li>The park also contains rock pinnacles and arches, as well as artifacts from Ancient Pueblo peoples.</li>
+            <li>The deep, narrow canyon is composed of gneiss and schist, which appears black when in shadow.</li>
+        </ul>
+    </div>
+
     <p class="title">FAQ of National Parks</p>
     <dl class="dl-main">
         <dt>What government agency oversees the National Park Service?</dt>
@@ -28,6 +54,7 @@
         <dt>What is the origin of the National Park Service arrowhead?</dt>
         <dd class="invisible">The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water representing scenic and recreational values, and the arrowhead itself representing historical and archeological values. Read more about the history of the arrowhead and other elements of NPS visual design.</dd>
     </dl>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         //add btn to toggle visibility
@@ -43,6 +70,18 @@
         //when dt is clicked, change the color of the dd to yellow
         $('.dl-main dt').on('click', function(){
             $(this).next().css('background-color', 'yellow');
+        });
+        //when #btn-parks is clicked last li of each ul in div.parks should have background color of yellow
+        $('#btn-parks').on('click', function(){
+            $('.parks ul li:last-child').css('background-color', 'yellow');
+        });
+        //when any h3 is clicked, its li's should be bold
+        $('h3').on('click', function(){
+            $(this).next().css('font-weight', 'bold');
+        });
+        //when any li is clicked, the first li background color should be blue
+        $('li').on('click', function(){
+            $(this).parent().children().first().css('background-color', 'blue');
         });
     </script>
 </body>
