@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title" id="first-title">
+            <h4 class="date" id="first-date"></h4>
+            <h2 class="categories" id="categories-first">
+                <h6 class="bdy" id="content-first"></h6>
+            </h2>
+        </h1>
+        <h1 class="title" id="second-title">
+            <h4 class="date" id="second-date"></h4>
+            <h2 class="categories" id="categories-second">
+                <h6 class="bdy" id="content-second"></h6>
+            </h2>
+        </h1>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $.ajax({
+            url: '../data/blog.json',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                //append first object to html
+                $('#first-title').html(data[0].title);
+                $('#first-date').html(data[0].date);
+                $('#categories-first').html(data[0].categories);
+                $('#content-first').html(data[0].content);
+                //append second object to html
+                $('#second-title').html(data[1].title);
+                $('#second-date').html(data[1].date);
+                $('#categories-second').html(data[1].categories);
+                $('#content-second').html(data[1].content);
+            }
+        });
+    </script>
+</body>
+</html>
