@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <button id="zoomIn">Zoom In</button>
+    <button id="zoomOut">Zoom Out</button>
+    <button id="favRes">Favorite Res</button>
+    <script>
+        var favRes = [32.50, -89.2];
+        var newZoom = 9;
+//when #zoomIn is clicked, increment newZoom by 5
+        document.getElementById('zoomIn').addEventListener('click', function() {
+            newZoom = map.getZoom() + 5;
+            map.setZoom(newZoom);
+        });
+//when #zoomOut is clicked, decrement newZoom by 5
+        document.getElementById('zoomOut').addEventListener('click', function() {
+            newZoom = map.getZoom() - 1;
+            map.setZoom(newZoom);
+        });
+//when #favRes is clicked, set the map's center to favRes
+        document.getElementById('favRes').addEventListener('click', function() {
+            map.setCenter(favRes);
+        });
+
+
+
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia2VhdG9uaHV0dG8iLCJhIjoiY2wycWxhNm44MXFwaDNkcDYwNnR6dGs2ZiJ9.N2Vg0OwJ_ItRSaFbonmUsw';
+    // Create a new marker.
+    
+    const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-94.7, 32.5], // st
+    zoom: newZoom // starting zoom
+    });
+    const marker1 = new mapboxgl.Marker()
+    .setLngLat([-94.7, 32.5])
+    .setPopup(new mapboxgl.Popup().setHTML("<h1>Jalapeno Tree!</h1>"))
+    .addTo(map);
+    const marker2 = new mapboxgl.Marker()
+    .setLngLat([-96.72, 32.54])
+    .setPopup(new mapboxgl.Popup().setHTML("<h1>Cheddars!</h1>"))
+    .addTo(map);
+    const marker3 = new mapboxgl.Marker()
+    .setLngLat([-93.75, 32.50])
+    .setPopup(new mapboxgl.Popup().setHTML("<h1>Horseshoe Casino!</h1>"))
+    .addTo(map);
+    </script>
+</script>
+</body>
+</html>
