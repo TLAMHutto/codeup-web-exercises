@@ -17,7 +17,7 @@
     <button id="zoomOut">Zoom Out</button>
     <button id="favRes">Favorite Res</button>
     <script>
-        var favRes = [32.50, -89.2];
+        var favRes = [-94.7,32.5];
         var newZoom = 9;
 //when #zoomIn is clicked, increment newZoom by 5
         document.getElementById('zoomIn').addEventListener('click', function() {
@@ -34,6 +34,22 @@
             map.setCenter(favRes);
         });
 
+    var jalTree = [
+            {name: 'The Jalapeno Tree', food: 'Mexican', rating: '4.5'}
+    ];
+    //console.log each jalTree object
+    for (var i = 0; i < jalTree.length; i++) {
+        console.log(jalTree[i]);
+    }
+    
+
+    var micheal = [
+            {name: 'Michealangelos', food: 'Italian', rating: '4.7'}
+    ];
+    var buffet = [
+            {name: 'HorseShoe Casino', food: 'Buffet', rating: '4.7'}
+    ];
+
 
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoia2VhdG9uaHV0dG8iLCJhIjoiY2wycWxhNm44MXFwaDNkcDYwNnR6dGs2ZiJ9.N2Vg0OwJ_ItRSaFbonmUsw';
@@ -47,7 +63,7 @@
     });
     const marker1 = new mapboxgl.Marker()
     .setLngLat([-94.7, 32.5])
-    .setPopup(new mapboxgl.Popup().setHTML("<h1>Jalapeno Tree!</h1>"))
+    .setPopup(new mapboxgl.Popup().setHTML(jalTreeLoop))
     .addTo(map);
     const marker2 = new mapboxgl.Marker()
     .setLngLat([-96.72, 32.54])
